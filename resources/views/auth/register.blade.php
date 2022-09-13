@@ -1,5 +1,4 @@
 @extends('layouts.layout')
 @section('content')
-404
-
+@include('errors.404')
 @endsection

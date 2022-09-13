@@ -3,7 +3,7 @@
 
 
 
-        <div class="w-full 2xl:h-[88vh] md:h-[85.2vh]">
+        <div class="w-full h-[87.8vh] 2xl:h-[88vh]  sm:h-[91.2vh] lg:h-[93.8vh] ">
 
             <form action="{{ route('product.store') }}" class="mx-2" method="post" enctype="multipart/form-data">
                 @csrf

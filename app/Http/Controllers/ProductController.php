@@ -42,13 +42,14 @@ class ProductController extends Controller
             'description' => 'required',
             'image' => 'required|image',
         ]);
-        // if (Auth::user()->id == 1) {
+        if (Auth::user()->id == 1) {
         Product::create([
             'title' => $request->input('title'),
             'description' => $request->input('description'),
             'image' => $imageUrl,
         ]);
-        // }
+        }
+        return redirect()->route('home');
     }
     protected function storeImage(Request $request)
     {
@@ -105,7 +106,7 @@ class ProductController extends Controller
             'description' => $request->input('description'),
             'image' => $imageUrl,
         ]);
-        return redirect()->route('product.index');
+        return redirect()->route('home');
     }
 
     /**

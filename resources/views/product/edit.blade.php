@@ -1,9 +1,9 @@
 @extends('layouts.layout')
 @section('content')
-<div class="py-12 ">
+
     <div class="max-w-7xl mx-auto sm:px-6 lg:px-8  rounded-lg shadow-lg ">
 
-        <div class="w-full ">
+        <div class="w-full h-[87.8vh] 2xl:h-[88vh]  sm:h-[91.2vh] lg:h-[93.8vh] ">
 
             <form action="{{ route('product.update', $product) }}" method="post" enctype="multipart/form-data">
                 @method('PUT')
@@ -39,5 +39,5 @@
         </div>
 
     </div>
-</div>
+
 @endsection
