@@ -8,7 +8,5 @@
               <div class="text-gray-700   text-6xl">404</div>
             </div>
           </div>
-
-
     </div>
 @endsection

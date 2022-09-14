@@ -1,14 +1,17 @@
 <div class="img grid grid-cols-3 w-full mb-1 ">
 
     <div class="  col-span-2">
-        <img class="w-full" src={{asset('storage/'.$product->image)}}>
+        <img class="w-full" src={{ asset('storage/' . $product->image) }}>
     </div>
-    <div >
+    <div>
         <div class="mx-auto w-9/12">
-            <h3 class="text-center my-2">{{$product->title}}</h3>
-            <p class="text-sm">{{$product->description}}</p>
+            <h3 class="text-center my-2">{{ $product->title }}</h3>
+            <p class="text-sm">{{ $product->description }} </p>
+            @auth
+                <a class="text-blue-500 text-sm" href="{{ route('product.edit', $product) }}">Redaguoti...</a>
+            @endauth
         </div>
 
     </div>
-</div>
 
+</div>
