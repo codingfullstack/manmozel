@@ -5,8 +5,8 @@
     </div>
     <div>
         <div class="mx-auto w-9/12">
-            <h3 class="text-center my-2">{{ $product->title }}</h3>
-            <p class="text-sm">{{ $product->description }} </p>
+            <h3 class="text-center text-2xl my-2">{{ $product->title }}</h3>
+            <p class=" text-xl">{{ $product->description }} </p>
             @auth
                 <a class="text-blue-500 text-sm" href="{{ route('product.edit', $product) }}">Redaguoti...</a>
             @endauth
