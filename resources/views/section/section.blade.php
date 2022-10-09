@@ -1,6 +1,6 @@
-<div class="img grid grid-cols-3 w-full mb-1 ">
+<div class="img grid sm:grid-cols-1 md:grid-cols-3 w-full mb-1 ">
 
-    <div class="  col-span-2">
+    <div class="  md:col-span-2">
         <img class="w-full" src={{ asset('storage/' . $product->image) }}>
     </div>
     <div>
